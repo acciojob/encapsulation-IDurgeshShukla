@@ -1,13 +1,12 @@
 package com.driver;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main (String[] args) {
         RWOnly obj = new RWOnly();
-       // obj.var;
+        obj.name;
         // Error 'var' has private access in RWOnly.java
-        int oldvalue = obj.getVar();
-        System.out.println(oldvalue);
-        int updated = obj.setVar(50);
+        obj.setName("Shivam");
+        String updated= obj.getName();
         System.out.println(updated);
     }
 }
